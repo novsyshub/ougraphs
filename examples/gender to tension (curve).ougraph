@@ -1,0 +1,72 @@
+format: openutau_expression_graph
+version: 1
+graph:
+  id: multiexp_graph__copy_2
+  name: MultiExp graph (curve)
+  renderer: CLASSIC
+  preferred_pitch_curve: pito
+  nodes:
+  - {id: 1, type: pitch_input, source: pitch_bend, x: -41, y: -149}
+  - {id: 2, type: pitch_input, source: vibrato, x: -39, y: -44}
+  - {id: 3, type: add, x: 132, y: -93}
+  - {id: 4, type: pitch_input, source: mod_plus, x: -39, y: 72}
+  - {id: 5, type: add, x: 265, y: -52}
+  - {id: 6, type: curve_input, abbr: pitd, x: -44, y: 168}
+  - {id: 7, type: add, x: 428, y: -32}
+  - {id: 8, type: masked_curve_input, abbr: pito, x: 576, y: -33}
+  - {id: 9, type: pitch_output, x: 848, y: -33}
+  - {id: 97, type: curve_input, abbr: genc, x: -494, y: 399}
+  - {id: 98, type: curve_input, abbr: tenc, x: -157, y: 488}
+  - {id: 99, type: multiply, b: -3.5, x: -283, y: 444}
+  - {id: 100, type: add, x: -64, y: 548}
+  - {id: 101, type: curve_output, abbr: tenc, x: -105, y: 462}
+  links:
+  - {from: 1, to: 3, to_port: a}
+  - {from: 2, to: 3, to_port: b}
+  - {from: 3, to: 5, to_port: a}
+  - {from: 4, to: 5, to_port: b}
+  - {from: 5, to: 7, to_port: a}
+  - {from: 8, from_port: value, to: 9, to_port: value}
+  - {from: 6, to: 7, to_port: b}
+  - {from: 7, to: 8, to_port: fallback}
+  - {from: 97, to: 99, to_port: a}
+  - {from: 99, to: 100, to_port: a}
+  - {from: 98, to: 100, to_port: b}
+  - {from: 100, to: 101, to_port: value}
+expressions:
+- name: pitch deviation (curve)
+  abbr: pitd
+  type: Curve
+  min: -1200
+  max: 1200
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: pitch override (masked curve)
+  abbr: pito
+  type: MaskedCurve
+  min: 2400
+  max: 10800
+  default_value: 2400
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: gender (curve)
+  abbr: genc
+  type: Curve
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: tension (curve)
+  abbr: tenc
+  type: Curve
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
