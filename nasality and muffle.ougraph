@@ -1,0 +1,190 @@
+format: openutau_expression_graph
+version: 1
+graph:
+  id: multiexp_graph__copy
+  name: MultiExp graph
+  renderer: CLASSIC
+  preferred_pitch_curve: pito
+  nodes:
+  - {id: 1, type: pitch_input, source: pitch_bend, x: -41, y: -149}
+  - {id: 2, type: pitch_input, source: vibrato, x: -39, y: -44}
+  - {id: 3, type: add, x: 132, y: -93}
+  - {id: 4, type: pitch_input, source: mod_plus, x: -39, y: 72}
+  - {id: 5, type: add, x: 265, y: -52}
+  - {id: 6, type: curve_input, abbr: pitd, x: -44, y: 168}
+  - {id: 7, type: add, x: 428, y: -32}
+  - {id: 8, type: masked_curve_input, abbr: pito, x: 576, y: -33}
+  - {id: 9, type: pitch_output, x: 848, y: -33}
+  - {id: 23, type: phoneme_output, abbr: gen, x: -495, y: 851}
+  - {id: 25, type: phoneme_input, interpolation: step, abbr: nsl, x: -1569, y: 480}
+  - {id: 26, type: phoneme_input, interpolation: step, abbr: tens, x: -1154, y: 398}
+  - {id: 27, type: phoneme_output, abbr: tens, x: -970, y: 408}
+  - {id: 31, type: add, x: -1156, y: 464}
+  - {id: 35, type: phoneme_input, interpolation: step, abbr: opn, x: -1157, y: 552}
+  - {id: 36, type: phoneme_output, abbr: opn, x: -968, y: 562}
+  - {id: 42, type: compare, operator: greater, x: -1466, y: 729}
+  - {id: 48, type: if_else, x: -1148, y: 886}
+  - {id: 51, type: clamp, min: -30, max: 20, x: -872, y: 886}
+  - {id: 53, type: phoneme_input, interpolation: step, abbr: gen, x: -684, y: 844}
+  - {id: 54, type: add, x: -684, y: 909}
+  - {id: 55, type: multiply, b: -1, x: -1012, y: 886}
+  - {id: 56, type: divide, b: 6, a: 10, x: -1394, y: 961}
+  - {id: 57, type: divide, b: 1.6, x: -1387, y: 848}
+  - {id: 65, type: add, x: -1158, y: 620}
+  - {id: 68, type: phoneme_input, interpolation: step, abbr: res, x: -932, y: 64}
+  - {id: 69, type: phoneme_output, abbr: res, x: -744, y: 75}
+  - {id: 70, type: clamp, min: -50, max: 18, x: -1180, y: 270}
+  - {id: 73, type: clamp, min: -8, max: 8, x: -1184, y: 1053}
+  - {id: 75, type: phoneme_input, interpolation: step, abbr: pit, x: -994, y: 1064}
+  - {id: 76, type: phoneme_output, abbr: pit, x: -800, y: 1070}
+  - {id: 81, type: add, x: -1036, y: 196}
+  - {id: 83, type: add, x: -996, y: 1131}
+  - {id: 84, type: multiply, b: 1.2, x: -1342, y: 508}
+  - {id: 85, type: phoneme_input, interpolation: step, abbr: mufl, x: -1579, y: -64}
+  - {id: 87, type: multiply, b: -1.5, x: -1336, y: 35}
+  - {id: 88, type: add, x: -1150, y: 122}
+  - {id: 89, type: add, x: -935, y: 132}
+  - {id: 90, type: add, x: -996, y: 295}
+  - {id: 91, type: add, x: -1174, y: 696}
+  - {id: 92, type: phoneme_output, abbr: frmn, x: -1096, y: -190}
+  - {id: 94, type: phoneme_input, interpolation: step, abbr: frmn, x: -1286, y: -199}
+  - {id: 95, type: add, x: -1298, y: -131}
+  - {id: 96, type: divide, b: 1.4, x: -1364, y: 340}
+  links:
+  - {from: 1, to: 3, to_port: a}
+  - {from: 2, to: 3, to_port: b}
+  - {from: 3, to: 5, to_port: a}
+  - {from: 4, to: 5, to_port: b}
+  - {from: 5, to: 7, to_port: a}
+  - {from: 8, from_port: value, to: 9, to_port: value}
+  - {from: 31, to: 27, to_port: value}
+  - {from: 26, to: 31, to_port: b}
+  - {from: 42, to: 48, to_port: condition}
+  - {from: 53, to: 54, to_port: a}
+  - {from: 48, to: 55, to_port: a}
+  - {from: 55, to: 51, to_port: value}
+  - {from: 51, to: 54, to_port: b}
+  - {from: 57, to: 48, to_port: then}
+  - {from: 35, to: 65, to_port: b}
+  - {from: 65, to: 36, to_port: value}
+  - {from: 6, to: 7, to_port: b}
+  - {from: 7, to: 8, to_port: fallback}
+  - {from: 56, to: 73, to_port: value}
+  - {from: 70, to: 81, to_port: b}
+  - {from: 25, to: 42, to_port: a}
+  - {from: 25, to: 57, to_port: a}
+  - {from: 25, to: 56, to_port: a}
+  - {from: 56, to: 48, to_port: else}
+  - {from: 73, to: 83, to_port: a}
+  - {from: 75, to: 83, to_port: b}
+  - {from: 83, to: 76, to_port: value}
+  - {from: 54, to: 23, to_port: value}
+  - {from: 25, to: 84, to_port: a}
+  - {from: 85, to: 87, to_port: a}
+  - {from: 87, to: 88, to_port: a}
+  - {from: 88, to: 81, to_port: a}
+  - {from: 81, to: 89, to_port: a}
+  - {from: 68, to: 89, to_port: b}
+  - {from: 89, to: 69, to_port: value}
+  - {from: 87, to: 90, to_port: a}
+  - {from: 84, to: 90, to_port: b}
+  - {from: 90, to: 31, to_port: a}
+  - {from: 87, to: 91, to_port: a}
+  - {from: 91, to: 65, to_port: a}
+  - {from: 87, to: 95, to_port: a}
+  - {from: 94, to: 95, to_port: b}
+  - {from: 95, to: 92, to_port: value}
+  - {from: 25, to: 96, to_port: a}
+  - {from: 96, to: 70, to_port: value}
+  - {from: 84, to: 91, to_port: b}
+expressions:
+- name: pitch deviation (curve)
+  abbr: pitd
+  type: Curve
+  min: -1200
+  max: 1200
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: pitch override (masked curve)
+  abbr: pito
+  type: MaskedCurve
+  min: 2400
+  max: 10800
+  default_value: 2400
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: gender
+  abbr: gen
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: g
+  skip_output_if_default: false
+- name: Nasality
+  abbr: nsl
+  type: Numerical
+  min: -25
+  max: 25
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: true
+- name: Tension
+  abbr: tens
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: Mt
+  skip_output_if_default: false
+- name: Openness
+  abbr: opn
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: Mo
+  skip_output_if_default: false
+- name: Resonance
+  abbr: res
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: Mr
+  skip_output_if_default: false
+- name: Pitch deviation (flag)
+  abbr: pit
+  type: Numerical
+  min: -1200
+  max: 1200
+  default_value: 0
+  is_flag: true
+  flag: t
+  skip_output_if_default: false
+- name: Muffle
+  abbr: mufl
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: false
+  flag: ""
+  skip_output_if_default: false
+- name: formant emphasis
+  abbr: frmn
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: ME
+  skip_output_if_default: false
