@@ -15,41 +15,45 @@ graph:
   - {id: 7, type: add, x: 428, y: -32}
   - {id: 8, type: masked_curve_input, abbr: pito, x: 576, y: -33}
   - {id: 9, type: pitch_output, x: 848, y: -33}
-  - {id: 23, type: phoneme_output, abbr: gen, x: -495, y: 851}
-  - {id: 25, type: phoneme_input, interpolation: step, abbr: nsl, x: -1569, y: 480}
-  - {id: 26, type: phoneme_input, interpolation: step, abbr: tens, x: -1154, y: 398}
-  - {id: 27, type: phoneme_output, abbr: tens, x: -970, y: 408}
-  - {id: 31, type: add, x: -1156, y: 464}
-  - {id: 35, type: phoneme_input, interpolation: step, abbr: opn, x: -1157, y: 552}
-  - {id: 36, type: phoneme_output, abbr: opn, x: -968, y: 562}
-  - {id: 42, type: compare, operator: greater, x: -1466, y: 729}
-  - {id: 48, type: if_else, x: -1148, y: 886}
-  - {id: 51, type: clamp, min: -30, max: 20, x: -872, y: 886}
-  - {id: 53, type: phoneme_input, interpolation: step, abbr: gen, x: -684, y: 844}
-  - {id: 54, type: add, x: -684, y: 909}
-  - {id: 55, type: multiply, b: -1, x: -1012, y: 886}
-  - {id: 56, type: divide, b: 6, a: 10, x: -1394, y: 961}
-  - {id: 57, type: divide, b: 1.6, x: -1387, y: 848}
-  - {id: 65, type: add, x: -1158, y: 620}
-  - {id: 68, type: phoneme_input, interpolation: step, abbr: res, x: -932, y: 64}
-  - {id: 69, type: phoneme_output, abbr: res, x: -744, y: 75}
-  - {id: 70, type: clamp, min: -50, max: 18, x: -1180, y: 270}
-  - {id: 73, type: clamp, min: -8, max: 8, x: -1184, y: 1053}
-  - {id: 75, type: phoneme_input, interpolation: step, abbr: pit, x: -994, y: 1064}
-  - {id: 76, type: phoneme_output, abbr: pit, x: -800, y: 1070}
-  - {id: 81, type: add, x: -1036, y: 196}
-  - {id: 83, type: add, x: -996, y: 1131}
-  - {id: 84, type: multiply, b: 1.2, x: -1342, y: 508}
-  - {id: 85, type: phoneme_input, interpolation: step, abbr: mufl, x: -1579, y: -64}
-  - {id: 87, type: multiply, b: -1.5, x: -1336, y: 35}
-  - {id: 88, type: add, x: -1150, y: 122}
-  - {id: 89, type: add, x: -935, y: 132}
-  - {id: 90, type: add, x: -996, y: 295}
-  - {id: 91, type: add, x: -1174, y: 696}
-  - {id: 92, type: phoneme_output, abbr: frmn, x: -1096, y: -190}
-  - {id: 94, type: phoneme_input, interpolation: step, abbr: frmn, x: -1286, y: -199}
-  - {id: 95, type: add, x: -1298, y: -131}
-  - {id: 96, type: divide, b: 1.4, x: -1364, y: 340}
+  - {id: 23, type: phoneme_output, abbr: gen, x: -1133, y: 871}
+  - {id: 25, type: phoneme_input, interpolation: step, abbr: nsl, x: -2180, y: 515}
+  - {id: 26, type: phoneme_input, interpolation: step, abbr: tens, x: -1055, y: 274}
+  - {id: 27, type: phoneme_output, abbr: tens, x: -864, y: 284}
+  - {id: 35, type: phoneme_input, interpolation: step, abbr: opn, x: -1000, y: 473}
+  - {id: 36, type: phoneme_output, abbr: opn, x: -812, y: 481}
+  - {id: 42, type: compare, operator: greater, x: -1904, y: 652}
+  - {id: 53, type: phoneme_input, interpolation: step, abbr: gen, x: -1323, y: 866}
+  - {id: 54, type: add, x: -1322, y: 935}
+  - {id: 56, type: divide, b: 6, a: 10, x: -1874, y: 892}
+  - {id: 57, type: divide, b: 1.7, x: -1870, y: 778}
+  - {id: 65, type: add, x: -986, y: 546}
+  - {id: 68, type: phoneme_input, interpolation: step, abbr: res, x: -1201, y: 60}
+  - {id: 69, type: phoneme_output, abbr: res, x: -1012, y: 70}
+  - {id: 70, type: clamp, min: -50, max: 18, x: -1710, y: 298}
+  - {id: 73, type: clamp, min: -8, max: 8, x: -1702, y: 1050}
+  - {id: 75, type: phoneme_input, interpolation: step, abbr: pit, x: -1494, y: 1060}
+  - {id: 76, type: phoneme_output, abbr: pit, x: -1300, y: 1070}
+  - {id: 81, type: add, x: -1268, y: 164}
+  - {id: 83, type: add, x: -1497, y: 1142}
+  - {id: 84, type: multiply, b: 1.2, x: -1672, y: 476}
+  - {id: 85, type: phoneme_input, interpolation: step, abbr: mufl, x: -1930, y: 140}
+  - {id: 87, type: multiply, b: -1.5, x: -1654, y: 140}
+  - {id: 89, type: add, x: -1207, y: 122}
+  - {id: 90, type: add, x: -1127, y: 306}
+  - {id: 92, type: phoneme_output, abbr: frmn, x: -1278, y: -82}
+  - {id: 94, type: phoneme_input, interpolation: step, abbr: frmn, x: -1464, y: -95}
+  - {id: 95, type: add, x: -1434, y: -8}
+  - {id: 96, type: divide, b: 1.4, x: -1810, y: 354}
+  - {id: 97, type: phoneme_output, abbr: vol, x: -972, y: 668}
+  - {id: 98, type: multiply, b: -1, x: -1556, y: 620}
+  - {id: 100, type: phoneme_input, interpolation: step, abbr: vol, x: -1174, y: 662}
+  - {id: 101, type: add, x: -1190, y: 731}
+  - {id: 102, type: clamp, min: -30, max: 30, x: -1296, y: 468}
+  - {id: 103, type: add, x: -1088, y: 354}
+  - {id: 104, type: if_else, x: -1651, y: 886}
+  - {id: 105, type: add, x: -1328, y: 544}
+  - {id: 106, type: multiply, b: -1, x: -1598, y: 836}
+  - {id: 107, type: clamp, min: -30, max: 20, x: -1532, y: 771}
   links:
   - {from: 1, to: 3, to_port: a}
   - {from: 2, to: 3, to_port: b}
@@ -57,14 +61,7 @@ graph:
   - {from: 4, to: 5, to_port: b}
   - {from: 5, to: 7, to_port: a}
   - {from: 8, from_port: value, to: 9, to_port: value}
-  - {from: 31, to: 27, to_port: value}
-  - {from: 26, to: 31, to_port: b}
-  - {from: 42, to: 48, to_port: condition}
   - {from: 53, to: 54, to_port: a}
-  - {from: 48, to: 55, to_port: a}
-  - {from: 55, to: 51, to_port: value}
-  - {from: 51, to: 54, to_port: b}
-  - {from: 57, to: 48, to_port: then}
   - {from: 35, to: 65, to_port: b}
   - {from: 65, to: 36, to_port: value}
   - {from: 6, to: 7, to_port: b}
@@ -74,29 +71,40 @@ graph:
   - {from: 25, to: 42, to_port: a}
   - {from: 25, to: 57, to_port: a}
   - {from: 25, to: 56, to_port: a}
-  - {from: 56, to: 48, to_port: else}
   - {from: 73, to: 83, to_port: a}
   - {from: 75, to: 83, to_port: b}
   - {from: 83, to: 76, to_port: value}
   - {from: 54, to: 23, to_port: value}
   - {from: 25, to: 84, to_port: a}
   - {from: 85, to: 87, to_port: a}
-  - {from: 87, to: 88, to_port: a}
-  - {from: 88, to: 81, to_port: a}
-  - {from: 81, to: 89, to_port: a}
-  - {from: 68, to: 89, to_port: b}
   - {from: 89, to: 69, to_port: value}
   - {from: 87, to: 90, to_port: a}
   - {from: 84, to: 90, to_port: b}
-  - {from: 90, to: 31, to_port: a}
-  - {from: 87, to: 91, to_port: a}
-  - {from: 91, to: 65, to_port: a}
   - {from: 87, to: 95, to_port: a}
   - {from: 94, to: 95, to_port: b}
   - {from: 95, to: 92, to_port: value}
   - {from: 25, to: 96, to_port: a}
   - {from: 96, to: 70, to_port: value}
-  - {from: 84, to: 91, to_port: b}
+  - {from: 87, to: 81, to_port: a}
+  - {from: 98, to: 101, to_port: a}
+  - {from: 100, to: 101, to_port: b}
+  - {from: 101, to: 97, to_port: value}
+  - {from: 25, to: 98, to_port: a}
+  - {from: 84, to: 102, to_port: value}
+  - {from: 81, to: 89, to_port: b}
+  - {from: 68, to: 89, to_port: a}
+  - {from: 90, to: 103, to_port: a}
+  - {from: 26, to: 103, to_port: b}
+  - {from: 103, to: 27, to_port: value}
+  - {from: 42, to: 104, to_port: condition}
+  - {from: 57, to: 104, to_port: then}
+  - {from: 56, to: 104, to_port: else}
+  - {from: 87, to: 105, to_port: b}
+  - {from: 102, to: 105, to_port: a}
+  - {from: 105, to: 65, to_port: a}
+  - {from: 104, to: 106, to_port: a}
+  - {from: 106, to: 107, to_port: value}
+  - {from: 107, to: 54, to_port: b}
 expressions:
 - name: pitch deviation (curve)
   abbr: pitd
@@ -187,4 +195,13 @@ expressions:
   default_value: 0
   is_flag: true
   flag: ME
+  skip_output_if_default: false
+- name: volume
+  abbr: vol
+  type: Numerical
+  min: 0
+  max: 200
+  default_value: 100
+  is_flag: false
+  flag: ""
   skip_output_if_default: false
