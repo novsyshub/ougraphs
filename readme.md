@@ -2,6 +2,7 @@
 (I am going to preface this by saying I am notoriously bad at explaining things, so you have been warned.)
 I figured it would probably be a good idea to summarize how my organization system works, since the compact clusters of nodes might be a bit confusing at first.
 ### Consecutive Operations
+
 Nodes with outputs which are being passed directly from one to the other all in a row are layered with the first being at the bottom, and those following stacked on top. In case that's hard to imagine just from that description, here's a screenshot of one of those:
 <picture>
     <source
@@ -27,6 +28,7 @@ And since I know if/else confused the fuck out of me at first, have a shitty dia
 ---
 
 ### Final Outputs
+
 Operations on an expression's input (initial value) and its output (final value) are clustered together, with the nodes arranged from front to back to indicate which operation happens first. Think of it as a "plus equals" or other equivalent.
 Take this painfully bad example:
 <picture>
