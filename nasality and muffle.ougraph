@@ -1,7 +1,7 @@
 format: openutau_expression_graph
 version: 1
 graph:
-  id: multiexp_graph__copy
+  id: multiexp_graph__copy_2
   name: MultiExp graph
   renderer: CLASSIC
   preferred_pitch_curve: pito
@@ -17,43 +17,51 @@ graph:
   - {id: 9, type: pitch_output, x: 848, y: -33}
   - {id: 23, type: phoneme_output, abbr: gen, x: -1133, y: 871}
   - {id: 25, type: phoneme_input, interpolation: step, abbr: nsl, x: -2180, y: 515}
-  - {id: 26, type: phoneme_input, interpolation: step, abbr: tens, x: -1055, y: 274}
-  - {id: 27, type: phoneme_output, abbr: tens, x: -864, y: 284}
-  - {id: 35, type: phoneme_input, interpolation: step, abbr: opn, x: -1000, y: 473}
-  - {id: 36, type: phoneme_output, abbr: opn, x: -812, y: 481}
-  - {id: 42, type: compare, operator: greater, x: -1904, y: 652}
+  - {id: 26, type: phoneme_input, interpolation: step, abbr: tens, x: -1153, y: 68}
+  - {id: 27, type: phoneme_output, abbr: tens, x: -952, y: 80}
+  - {id: 35, type: phoneme_input, interpolation: step, abbr: opn, x: -1077, y: 536}
+  - {id: 36, type: phoneme_output, abbr: opn, x: -866, y: 539}
+  - {id: 42, type: compare, operator: greater, x: -1964, y: 674}
   - {id: 53, type: phoneme_input, interpolation: step, abbr: gen, x: -1323, y: 866}
   - {id: 54, type: add, x: -1322, y: 935}
-  - {id: 56, type: divide, b: 6, a: 10, x: -1874, y: 892}
-  - {id: 57, type: divide, b: 1.7, x: -1870, y: 778}
-  - {id: 65, type: add, x: -986, y: 546}
-  - {id: 68, type: phoneme_input, interpolation: step, abbr: res, x: -1201, y: 60}
-  - {id: 69, type: phoneme_output, abbr: res, x: -1012, y: 70}
-  - {id: 70, type: clamp, min: -50, max: 18, x: -1710, y: 298}
-  - {id: 73, type: clamp, min: -8, max: 8, x: -1702, y: 1050}
+  - {id: 56, type: divide, b: 6, a: 10, x: -1970, y: 930}
+  - {id: 57, type: divide, b: 1.7, x: -1968, y: 796}
+  - {id: 65, type: add, x: -1080, y: 607}
+  - {id: 68, type: phoneme_input, interpolation: step, abbr: res, x: -1298, y: -125}
+  - {id: 69, type: phoneme_output, abbr: res, x: -1106, y: -114}
+  - {id: 70, type: clamp, min: -50, max: 18, x: -1832, y: 288}
+  - {id: 73, type: clamp, min: -6, max: 6, x: -1738, y: 1069}
   - {id: 75, type: phoneme_input, interpolation: step, abbr: pit, x: -1494, y: 1060}
   - {id: 76, type: phoneme_output, abbr: pit, x: -1300, y: 1070}
-  - {id: 81, type: add, x: -1268, y: 164}
+  - {id: 81, type: add, x: -1297, y: -62}
   - {id: 83, type: add, x: -1497, y: 1142}
-  - {id: 84, type: multiply, b: 1.2, x: -1672, y: 476}
-  - {id: 85, type: phoneme_input, interpolation: step, abbr: mufl, x: -1930, y: 140}
-  - {id: 87, type: multiply, b: -1.5, x: -1654, y: 140}
-  - {id: 89, type: add, x: -1207, y: 122}
-  - {id: 90, type: add, x: -1127, y: 306}
-  - {id: 92, type: phoneme_output, abbr: frmn, x: -1278, y: -82}
-  - {id: 94, type: phoneme_input, interpolation: step, abbr: frmn, x: -1464, y: -95}
-  - {id: 95, type: add, x: -1434, y: -8}
-  - {id: 96, type: divide, b: 1.4, x: -1810, y: 354}
-  - {id: 97, type: phoneme_output, abbr: vol, x: -972, y: 668}
-  - {id: 98, type: multiply, b: -1, x: -1556, y: 620}
-  - {id: 100, type: phoneme_input, interpolation: step, abbr: vol, x: -1174, y: 662}
-  - {id: 101, type: add, x: -1190, y: 731}
-  - {id: 102, type: clamp, min: -30, max: 30, x: -1296, y: 468}
-  - {id: 103, type: add, x: -1088, y: 354}
-  - {id: 104, type: if_else, x: -1651, y: 886}
-  - {id: 105, type: add, x: -1328, y: 544}
-  - {id: 106, type: multiply, b: -1, x: -1598, y: 836}
-  - {id: 107, type: clamp, min: -30, max: 20, x: -1532, y: 771}
+  - {id: 84, type: multiply, b: 1.3, x: -1848, y: 472}
+  - {id: 85, type: phoneme_input, interpolation: step, abbr: mufl, x: -1874, y: 74}
+  - {id: 87, type: multiply, b: -1.5, x: -1624, y: 74}
+  - {id: 89, type: add, x: -1246, y: -19}
+  - {id: 90, type: add, x: -1172, y: 131}
+  - {id: 92, type: phoneme_output, abbr: frmn, x: -1324, y: -276}
+  - {id: 94, type: phoneme_input, interpolation: step, abbr: frmn, x: -1511, y: -286}
+  - {id: 95, type: add, x: -1504, y: -210}
+  - {id: 96, type: divide, b: 1.4, x: -1905, y: 352}
+  - {id: 102, type: clamp, min: -30, max: 30, x: -1584, y: 302}
+  - {id: 103, type: add, x: -1196, y: 171}
+  - {id: 104, type: if_else, x: -1744, y: 928}
+  - {id: 105, type: add, x: -1246, y: 477}
+  - {id: 106, type: multiply, b: -1, x: -1662, y: 891}
+  - {id: 107, type: clamp, min: -30, max: 20, x: -1578, y: 836}
+  - {id: 108, type: divide, b: 0.8, x: -1688, y: 574}
+  - {id: 109, type: clamp, min: -20, max: 15, x: -1494, y: 491}
+  - {id: 110, type: phoneme_input, interpolation: step, abbr: amp, x: -516, y: 230}
+  - {id: 113, type: add, x: -516, y: 302}
+  - {id: 114, type: phoneme_output, abbr: amp, x: -325, y: 240}
+  - {id: 115, type: if_else, x: -770, y: 359}
+  - {id: 116, type: compare, operator: greater, x: -1028, y: 260}
+  - {id: 117, type: phoneme_input, interpolation: step, abbr: mod+, x: -512, y: 422}
+  - {id: 118, type: phoneme_output, abbr: mod+, x: -328, y: 437}
+  - {id: 119, type: divide, b: 10, x: -662, y: 468}
+  - {id: 120, type: add, x: -520, y: 494}
+  - {id: 121, type: divide, b: 3, x: -666, y: 253}
   links:
   - {from: 1, to: 3, to_port: a}
   - {from: 2, to: 3, to_port: b}
@@ -67,7 +75,6 @@ graph:
   - {from: 6, to: 7, to_port: b}
   - {from: 7, to: 8, to_port: fallback}
   - {from: 56, to: 73, to_port: value}
-  - {from: 70, to: 81, to_port: b}
   - {from: 25, to: 42, to_port: a}
   - {from: 25, to: 57, to_port: a}
   - {from: 25, to: 56, to_port: a}
@@ -79,18 +86,11 @@ graph:
   - {from: 85, to: 87, to_port: a}
   - {from: 89, to: 69, to_port: value}
   - {from: 87, to: 90, to_port: a}
-  - {from: 84, to: 90, to_port: b}
   - {from: 87, to: 95, to_port: a}
   - {from: 94, to: 95, to_port: b}
   - {from: 95, to: 92, to_port: value}
   - {from: 25, to: 96, to_port: a}
   - {from: 96, to: 70, to_port: value}
-  - {from: 87, to: 81, to_port: a}
-  - {from: 98, to: 101, to_port: a}
-  - {from: 100, to: 101, to_port: b}
-  - {from: 101, to: 97, to_port: value}
-  - {from: 25, to: 98, to_port: a}
-  - {from: 84, to: 102, to_port: value}
   - {from: 81, to: 89, to_port: b}
   - {from: 68, to: 89, to_port: a}
   - {from: 90, to: 103, to_port: a}
@@ -99,12 +99,29 @@ graph:
   - {from: 42, to: 104, to_port: condition}
   - {from: 57, to: 104, to_port: then}
   - {from: 56, to: 104, to_port: else}
-  - {from: 87, to: 105, to_port: b}
-  - {from: 102, to: 105, to_port: a}
   - {from: 105, to: 65, to_port: a}
   - {from: 104, to: 106, to_port: a}
   - {from: 106, to: 107, to_port: value}
   - {from: 107, to: 54, to_port: b}
+  - {from: 87, to: 105, to_port: a}
+  - {from: 70, to: 81, to_port: a}
+  - {from: 87, to: 81, to_port: b}
+  - {from: 25, to: 108, to_port: a}
+  - {from: 84, to: 102, to_port: value}
+  - {from: 102, to: 90, to_port: b}
+  - {from: 108, to: 109, to_port: value}
+  - {from: 109, to: 105, to_port: b}
+  - {from: 113, to: 114, to_port: value}
+  - {from: 103, to: 116, to_port: a}
+  - {from: 116, to: 115, to_port: condition}
+  - {from: 110, to: 113, to_port: b}
+  - {from: 103, to: 115, to_port: then}
+  - {from: 115, to: 119, to_port: a}
+  - {from: 119, to: 120, to_port: a}
+  - {from: 117, to: 120, to_port: b}
+  - {from: 120, to: 118, to_port: value}
+  - {from: 115, to: 121, to_port: a}
+  - {from: 121, to: 113, to_port: a}
 expressions:
 - name: pitch deviation (curve)
   abbr: pitd
@@ -127,8 +144,8 @@ expressions:
 - name: gender
   abbr: gen
   type: Numerical
-  min: -100
-  max: 100
+  min: -50
+  max: 40
   default_value: 0
   is_flag: true
   flag: g
@@ -136,8 +153,8 @@ expressions:
 - name: Nasality
   abbr: nsl
   type: Numerical
-  min: -25
-  max: 25
+  min: -40
+  max: 40
   default_value: 0
   is_flag: false
   flag: ""
@@ -159,7 +176,7 @@ expressions:
   default_value: 0
   is_flag: true
   flag: Mo
-  skip_output_if_default: false
+  skip_output_if_default: true
 - name: Resonance
   abbr: res
   type: Numerical
@@ -172,8 +189,8 @@ expressions:
 - name: Pitch deviation (flag)
   abbr: pit
   type: Numerical
-  min: -1200
-  max: 1200
+  min: -60
+  max: 60
   default_value: 0
   is_flag: true
   flag: t
@@ -196,12 +213,22 @@ expressions:
   is_flag: true
   flag: ME
   skip_output_if_default: false
-- name: volume
-  abbr: vol
+- name: Amplitude Modulation
+  abbr: amp
+  type: Numerical
+  min: -100
+  max: 100
+  default_value: 0
+  is_flag: true
+  flag: A
+  skip_output_if_default: false
+- name: modulation plus
+  abbr: mod+
   type: Numerical
   min: 0
-  max: 200
-  default_value: 100
+  max: 100
+  default_value: 0
+  custom_default_value: 2
   is_flag: false
   flag: ""
   skip_output_if_default: false
